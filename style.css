@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    width: 450px;
+    margin-top: 40px;
+}
+.button {
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 10px 8px;
+}
+.question {
+    display: none;
+    border: 1px solid black;
+    height: 100px;
+    padding: 12px 8px;
+}
+.active {
+    display: block;
+}
+.main-arr {
+    background-color: pink;
+    display: none;
+    margin: 10px 0;
+    padding: 4px 8px;
+}

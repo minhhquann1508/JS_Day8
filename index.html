@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS buổi 8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div class="wrapper">
+      <div class="input">
+        <input type="text" placeholder="Add" id="add-input" />
+        <button id="add-btn">Thêm số</button>
+        <div class="main-arr"></div>
+      </div>
+      <div class="">
+        <div class="button">Câu 1</div>
+        <div class="question question-0">
+          <span>Tính tổng số dương trong mảng</span>
+          <button onclick="sumOfPosNum()">Tính</button>
+          <div class="result-1"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 2</div>
+        <div class="question question-1">
+          <span>Đếm có bao nhiêu số dương trong mảng</span>
+          <button onclick="countPosNum()">Đếm</button>
+          <div class="result-2"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 3</div>
+        <div class="question question-2">
+          <span>Tìm số nhỏ nhất trong mảng đã nhập</span>
+          <button onclick="minOfArr()">Tìm</button>
+          <div class="result-3"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="button">Câu 4</div>
+        <div class="question question-3">
+          <span>Tìm số dương nhỏ nhất trong mảng đã nhập</span>
+          <button onclick="minPosNumOfArr()">Tìm</button>
+          <div class="result-4"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 5</div>
+        <div class="question question-4">
+          <span>Tìm số chẵn cuối cùng trong mảng</span>
+          <button onclick="findLastEvenNum()">Tìm</button>
+          <div class="result-5"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 6</div>
+        <div class="question question-5">
+          <span>Đổi chỗ 2 giá trị trong mảng</span>
+          <br />
+          <input type="text" placeholder="Số thứ nhất" id="first-num" />
+          <input type="text" placeholder="Số thứ hai" id="second-num" />
+          <button onclick="swapNum ()">Tìm</button>
+          <div class="result-6"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 7</div>
+        <div class="question question-6">
+          <span>Sắp xếp mảng theo thứ tự tăng dần</span>
+          <button onclick="sortArr()">Sắp xếp</button>
+          <div class="result-7"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 8</div>
+        <div class="question question-7">
+          <span>Tìm số nguyên tố đầu tiên của mảng</span>
+          <button onclick="findPerfectNum()">Tìm</button>
+          <div class="result-8"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 9</div>
+        <div class="question question-8">
+          <input type="text" id="new-num" />
+          <button onclick="addNewArray ()">Thêm số</button>
+          <button onclick="countIntNum()">Đếm số nguyên</button>
+          <div class="my-array"></div>
+          <div class="result-9"></div>
+        </div>
+      </div>
+      <div>
+        <div class="button">Câu 10</div>
+        <div class="question question-9">
+          <span>Đếm có bao nhiêu số âm và bao nhiêu số dương trong dãy</span>
+          <button onclick="countPosAndNevNum ()">Đếm</button>
+          <div class="result-10"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
