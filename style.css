@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: pink;
 }
 .wrapper {
     width: 450px;
@@ -11,12 +12,14 @@ body {
     border: 1px solid black;
     margin: 10px 0;
     padding: 10px 8px;
+    background-color: white;
 }
 .question {
     display: none;
     border: 1px solid black;
     height: 100px;
     padding: 12px 8px;
+    background-color: rgb(157, 201, 255);
 }
 .active {
     display: block;

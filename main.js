@@ -8,9 +8,14 @@ btns.forEach((btn,index) => {
     }
 })
 addBtn.onclick = () => {
-    arr.push(parseFloat(addInput.value))
-    document.querySelector('.main-arr').style.display = 'block'
-    document.querySelector('.main-arr').innerHTML = 'Mảng hiện tại:' +arr;
+    if(addInput.value === '') {
+        alert('Nhập số đi ạ')
+    }
+    else {
+        arr.push(parseFloat(addInput.value))
+        document.querySelector('.main-arr').style.display = 'block'
+        document.querySelector('.main-arr').innerHTML = 'Mảng hiện tại:' +arr;
+    }
 }
 function sumOfPosNum () {
     const result = arr.reduce((sum,cur) => {
@@ -67,15 +72,26 @@ function findLastEvenNum () {
 function swapNum () {
     let firstNum = document.getElementById('first-num').value - 1;
     let secondtNum = document.getElementById('second-num').value - 1 ;
-    let temp = arr[firstNum];
-    arr[firstNum] = arr[secondtNum];
-    arr[secondtNum] = temp;
-    document.querySelector('.result-6').innerHTML = `Dãy sau khi đổi : ${arr}`
+    if(document.getElementById('first-num').value === '' || document.getElementById('second-num').value === '') {
+        alert('Nhập vị trí cần thay đổi')
+    }
+    else {
+        let temp = arr[firstNum];
+        arr[firstNum] = arr[secondtNum];
+        arr[secondtNum] = temp;
+        document.querySelector('.result-6').innerHTML = `Dãy sau khi đổi : ${arr}`
+    }
 }
 function sortArr () {
-    arr.sort(function(a,b) {
-        return a-b;
-    })
+    for(let i=0;i<arr.length;i++){
+        for(let j=i+1;j<arr.length;j++) {
+            if(arr[j] <= arr[i] ) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp
+            }
+        }
+    }
     document.querySelector('.result-7').innerHTML = `Dãy sau khi đổi : ${arr}`
 }
 function findPerfectNum () {
@@ -104,8 +120,13 @@ function checkPerfectNum (num) {
 let newArr = []
 function addNewArray () {
     let newValue = parseFloat(document.getElementById('new-num').value)
-    newArr.push(newValue)
-    document.querySelector('.my-array').innerHTML = newArr;
+    if(document.getElementById('new-num').value === '') {
+        alert('Nhập vô đi ạ')
+    }
+    else {
+        newArr.push(newValue)
+        document.querySelector('.my-array').innerHTML = newArr;
+    }
 }
 function countIntNum () {
     let count = 0 ;
